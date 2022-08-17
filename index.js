@@ -94,24 +94,21 @@ function createLikeIconEventListeners(numOfPosts) {
     listOfElements.forEach(function(iconLike, index){
         iconLike.addEventListener("click", function() {
             if (posts[index].liked === false) {
-            iconLike.style.fill = "red"
-            iconLike.style.stroke = "red"
-            posts[index].liked = true
-            posts[index].likes += 1
-            
-            iconLike.style.transition= "transform 0.2s"
-            iconLike.style.transform = "scale(1.2)"
-            setTimeout(function() {
-                iconLike.style.transition= "transform 0.2s"
-                iconLike.style.transform = "scale(1)"
-            }, 200)
-        } else {
-            iconLike.style.fill = "none"
-            iconLike.style.stroke = "black"
-            posts[index].liked = false
-            posts[index].likes -= 1
-        }
-        document.getElementById(`${posts[index].username}-post-likes`).innerHTML = posts[index].likes
+                iconLike.style.fill = "red"
+                iconLike.style.stroke = "red"
+                posts[index].liked = true
+                posts[index].likes += 1
+                iconLike.style.transform = "scale(0.8)"
+                setTimeout(function() {
+                    iconLike.style.transform = "scale(1)"
+                }, 200)
+            } else {
+                iconLike.style.fill = "none"
+                iconLike.style.stroke = "black"
+                posts[index].liked = false
+                posts[index].likes -= 1
+            }
+            document.getElementById(`${posts[index].username}-post-likes`).innerHTML = posts[index].likes
         })
     })
 }
