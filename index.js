@@ -1,6 +1,5 @@
 const posts = [
     {   
-        postId: 0,
         name: "Vincent van Gogh",
         username: "vincey1853",
         location: "Zundert, Netherlands",
@@ -11,7 +10,6 @@ const posts = [
         liked: false
     },
     {   
-        postId: 1,
         name: "Gustave Courbet",
         username: "gus1819",
         location: "Ornans, France",
@@ -22,7 +20,6 @@ const posts = [
         liked: false
     },
     {
-        postId: 2,
         name: "Joseph Ducreux",
         username: "jd1735",
         location: "Paris, France",
