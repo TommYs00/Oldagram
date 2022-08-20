@@ -53,7 +53,7 @@ function loadPosts(listOfPosts) {
             <img class="post-img" src="${newPost.post}" alt="${newPost.username} post">
             <div class="post-footer">
                 <div class="post-footer-icons">
-                    <div>
+                    <div class="display-flex">
                         <svg class="icon icon-like pointer" id="${newPost.username}-post" fill="none" stroke="black" stroke-width="2.32996" width="27" height="25" viewBox="0 0 27 25">
                             <path class="icon-like" d="M3.84587 13.5811L12.7963 23.2159C13.2572 23.712 14.0424 23.712 14.5033 23.2159L23.4537 13.5811C25.9149 10.9318 25.9149 6.63634 23.4537 3.987C20.9926 1.33767 17.0022 1.33767 14.5411 3.987L14.5033 4.02764C14.0424 4.52375 13.2572 4.52375 12.7963 4.02764L12.7585 3.987C10.2974 1.33767 6.30704 1.33767 3.84587 3.987C1.38471 6.63634 1.38471 10.9318 3.84587 13.5811Z"/>
                         </svg>
