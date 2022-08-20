@@ -47,7 +47,7 @@ body {
 /* || LAYOUT */
 
 header,
-section {
+.post {
     background-color: white;
 }
 
@@ -68,8 +68,14 @@ img {
     width: 34px;
 }
 
+.post-section {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
 .post {
-    height: 570px;
+    height: 545px;
 }
 
 .post-header {
